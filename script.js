@@ -1,7 +1,9 @@
-function myFunction(){
-document.getElementById("image").src="images/on.gif" ;
-}
+const onBtn = document.querySelector(".on");
+const offBtn = document.querySelector(".off");
 
-function myFunction2() {
-    document.getElementById("image").src="images/off.gif" ;
-}
+onBtn.addEventListener("click", () => {
+  document.getElementById("image").src="images/on.gif" ;
+})
+offBtn.addEventListener("click", () => {
+  document.getElementById("image").src="images/off.gif" ;
+})
